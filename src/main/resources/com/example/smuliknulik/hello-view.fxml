@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="498.0" prefWidth="568.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.smuliknulik.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <GridPane>
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Таймер" />
+            <Label text="Повтор" GridPane.columnIndex="1" />
+            <Button fx:id="start" mnemonicParsing="false" text="Start" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button fx:id="stop" mnemonicParsing="false" text="Stop" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Button fx:id="clean" mnemonicParsing="false" text="Clear" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+            <TextField fx:id="timer" GridPane.rowIndex="1" />
+            <TextField fx:id="repeat" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="mess" prefHeight="18.0" prefWidth="135.0" text="Таймер не активен" GridPane.rowIndex="2" />
+            <TextField fx:id="dindon" GridPane.rowIndex="3" />
+            <Button fx:id="stCount" mnemonicParsing="false" text="Start" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Button fx:id="spCount" mnemonicParsing="false" text="Stop" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Label text="Отсчет" GridPane.rowIndex="4" />
+            <TextField fx:id="coll" GridPane.rowIndex="5" />
+            <Button fx:id="stColl" mnemonicParsing="false" text="Start" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Button fx:id="spColl" mnemonicParsing="false" text="Stop" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+            <Label text="Звонок" GridPane.rowIndex="6" />
+            <TextField fx:id="clock" GridPane.rowIndex="7" />
+            <Button fx:id="stClock" mnemonicParsing="false" text="Start" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <Button fx:id="spClock" mnemonicParsing="false" text="Stop" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+            <Label text="Песочные часы" GridPane.rowIndex="8" />
+         </children>
+      </GridPane>
+      <Canvas fx:id="canvas" height="204.0" width="413.0" />
+   </children>
+</VBox>
